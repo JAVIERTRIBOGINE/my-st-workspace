@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "publish:release": "pnpm publish --no-git-checks",
-    "publish": "ng build shared-core && cd dist/shared-core && pnpm publish:release",
+    "publish": "ng build shared-core && cd dist/shared-core && npm run publish:release",
     "serve:ssr:demo": "ng build demo && node dist/demo/server/server.mjs"
   },
   "prettier": {
