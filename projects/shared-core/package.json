@@ -1,6 +1,6 @@
 {
   "name": "@JAVIERTRIBOGINE/shared-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "bundles/shared-core.umd.js",
   "typings": "shared-core.d.ts",
   "publishConfig": {
