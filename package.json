@@ -8,7 +8,8 @@
     "build:watch": "ng build shared-core --watch",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish": "ng build shared-core && cd dist/shared-core && npm publish",
+    "publish:release": "pnpm publish --no-git-checks",
+    "publish": "ng build shared-core && cd dist/shared-core && pnpm publish:release",
     "serve:ssr:demo": "ng build demo && node dist/demo/server/server.mjs"
   },
   "prettier": {
