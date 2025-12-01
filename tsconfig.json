@@ -11,6 +11,12 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
+    "paths": {
+      "shared-core": [
+        "./dist/shared-core",
+        "./projects/shared-core/src/public-api.ts"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve"
@@ -21,5 +27,19 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/shared-core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/shared-core/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.spec.json"
+    }
+  ]
 }
